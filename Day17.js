@@ -11,15 +11,8 @@ const toCamelCase = (str) => {
 }
 
 const toSnakeCase = (str) => {
-    let index
-    let arr = str.split("")
- arr.map((item,index)=>{
-        if(item.toUpperCase()==item){
-            index = index
-        }
-    })
-    return arr
+   return str.replace(/[A-Z]/g,match => "_"+match.toLowerCase())
 }
 
 console.log(toCamelCase("hello world thApa"))
-console.log(toSnakeCase("helloWorld"))
+console.log(toSnakeCase("helloWorldAshuSysfore"))
