@@ -1,10 +1,11 @@
 const isEmtyObject = (obj) => {
-   for(let key in obj){
-    if(obj.hasOwnProperty(key)){
-        return "Not empty"
-    }
-   }
-   return "empty"
+//    for(let key in obj){
+//     if(obj.hasOwnProperty(key)){
+//         return "Not empty"
+//     }
+//    }
+//    return "empty"
+return Object.keys(obj).length!==0;
 };
 
 console.log(isEmtyObject({}));
